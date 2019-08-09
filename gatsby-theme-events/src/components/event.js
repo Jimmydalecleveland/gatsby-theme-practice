@@ -1,7 +1,7 @@
 import React from 'react';
 
 const getDate = (date, { day = true, month = true, year = true } = {}) => {
-  return date.toDateString('en-US', {
+  return date.toLocaleDateString('en-US', {
     day: day ? 'numeric' : undefined,
     month: month ? 'long' : undefined,
     year: year ? 'numeric' : undefined,
