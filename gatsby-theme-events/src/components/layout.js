@@ -1,10 +1,13 @@
 import React from 'react';
+import { Layout as ThemeLayout, Header, Main, Container } from 'theme-ui'
 
 const Layout = ({ children }) => (
-  <div>
-    <h1>Events from Gatsby theme</h1>
+  <ThemeLayout>
+    <Header><h1>Events from Gatsby theme</h1></Header>
+    <Main><Container>
     {children}
-  </div>
+      </Container></Main>
+  </ThemeLayout>
 );
 
 export default Layout;
