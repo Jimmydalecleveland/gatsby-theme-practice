@@ -1,0 +1,1 @@
+// export { default as ShadowBoi } from './src/components/shadowboi'

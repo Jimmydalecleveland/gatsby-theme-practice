@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Styled } from 'theme-ui'
+import ShadowBoi from './shadowboi';
 
 const EventList = ({ events }) => {
   return (
     <>
       <Styled.h1>Upcoming Events</Styled.h1>
+      <ShadowBoi isChocolateVisible={true}>Let me holla at ya</ShadowBoi>
       <Styled.ul>
         {events.map(event => (
           <Styled.li key={event.id}>
